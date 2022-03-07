@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heatseeker Heaven</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid;
+      }
+      table {
+        width: 25%;
+      }
+      table.center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      h1 {
+        text-align: center;
+        text-decoration: overline;
+        text-decoration-color: blueviolet;
+        text-shadow: 0px 0px 5px blue;
+      }
+      h2 {
+        text-decoration: underline;
+        text-decoration-color: blueviolet;
+        text-shadow: 0px 0px 5px blue;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Heatseeker Heaven</h1>
+      <nav>
+        <ul>
+          <a href="index.html"><li>Home</li></a>
+          <a href="part1.html"><li>Part 1</li></a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <iframe
+          src="https://rocketleague.fandom.com/wiki/Heatseeker"
+          width="1000"
+          height="300"
+          title="heatseeker"
+          style="border: 20px solid blueviolet"
+        ></iframe>
+      </section>
+      <article>
+        <h2>Streamers</h2>
+        <ol>
+          <li>BobMan</li>
+          <li>Zingerz</li>
+          <li>Booster</li>
+        </ol>
+        <ul>
+          <li>Orangecod</li>
+          <li>Cheezy</li>
+          <li>Kodiak</li>
+        </ul>
+        <h2>Players</h2>
+        <dl>
+          <dt>Lyd</dt>
+          <dd>Content creator/editor</dd>
+          <dt>Bramble</dt>
+          <dd>the guy who set up the acc tutorial video</dd>
+          <dt>Tavz</dt>
+          <dd>Brambles friend</dd>
+        </dl>
+
+        <h2 style="text-align: center">Tourneys</h2>
+
+        <table class="center" width="400px">
+          <tr>
+            <th>Month, Day, Year</th>
+
+            <th>Time</th>
+
+            <th>Money</th>
+          </tr>
+
+          <tr>
+            <td>Feburary, 27, 2022</td>
+            <td>2:00 - 7:30 est</td>
+            <td>200$</td>
+          </tr>
+        </table>
+      </article>
+      <section>
+        <h2>Who do you know out of these players?</h2>
+        <form action="/Part2.html" method="get">
+          <!-- This code is from https://www.w3schools.com/tags/tag_form.asp-->
+          <fieldset form="Best-Player" name="b-player">
+            <legend>Which Player out of these three is the best?</legend>
+            <input
+              type="checkbox"
+              name="Player1"
+              value="Lyd"
+              id="lydipai"
+            /><!-- Gives you the option to Click on Lyd -->
+            <label for="Player1"> This is Lyd</label><br />
+            <input
+              type="checkbox"
+              name="Player2"
+              value="Bramble"
+              id="brambleBurri"
+            /><!-- Gives you the option to Click on Bramble -->
+            <label for="Player2"> This is Bramble</label><br />
+            <input
+              type="checkbox"
+              name="Player3"
+              value="Tavz"
+              id="tavzRL"
+            /><!-- Gives you the option to Click on Tavz -->
+            <label for="Player3"> This is Tavz</label><br /><br />
+            <label for="other"> I Think a different player is the best:</label>
+            <input type="text" name="other-best-player" id="otherBestPlayer" />
+            <input type="submit" value="Submit" />
+            <label for="submit"> Click here to submit</label>
+            <input type="reset" value="Clear" />
+            <label for="reset"> Click here to reset</label>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <textarea></textarea>
+  </body>
+</html>
